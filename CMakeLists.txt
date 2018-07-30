@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   Form.msg
-  Obstacle.msg
+  Obstacles.msg
   Zone.msg
 )
 
