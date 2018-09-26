@@ -17,7 +17,6 @@ add_message_files(
   # state_manager/MachineDescription.msg
   # state_manager/State.msg
   # state_manager/Transition.msg
-  tts/TTSRequest.msg
 )
 
 generate_messages(
