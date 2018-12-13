@@ -14,6 +14,10 @@ add_message_files(
   Form.msg
   Obstacles.msg
   Zone.msg
+  AppCmd.msg
+  TextCmd.msg
+  FaceInfo.msg
+  DetectedFaces.msg
   # state_manager/MachineDescription.msg
   # state_manager/State.msg
   # state_manager/Transition.msg
