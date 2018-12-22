@@ -18,6 +18,7 @@ add_message_files(
   TextCmd.msg
   FaceInfo.msg
   DetectedFaces.msg
+  NormalizedFaces.msg
   # state_manager/MachineDescription.msg
   # state_manager/State.msg
   # state_manager/Transition.msg
