@@ -10,11 +10,10 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 add_message_files(
-  FILES
+  FILES 
   Form.msg
   Obstacles.msg
   Zone.msg
-  AppCmd.msg
   TextCmd.msg
   FaceInfo.msg
   DetectedFaces.msg
@@ -22,6 +21,18 @@ add_message_files(
   # state_manager/MachineDescription.msg
   # state_manager/State.msg
   # state_manager/Transition.msg
+)
+
+add_message_files(
+  DIRECTORY msg/supervisor
+  FILES 
+  AppCmd.msg
+)
+
+add_message_files(
+  DIRECTORY msg/sensor
+  FILES 
+  Image64.msg
 )
 
 generate_messages(
