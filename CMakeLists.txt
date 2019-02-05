@@ -7,6 +7,7 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   message_generation
   geometry_msgs
+  nav_msgs
 )
 
 add_message_files(
@@ -30,19 +31,20 @@ add_message_files(
 )
 
 add_message_files(
-  DIRECTORY msg/sensor
+  DIRECTORY msg/nav
   FILES 
-  Image64.msg
+  Map64.msg
 )
 
 generate_messages(
   DEPENDENCIES
   std_msgs
   geometry_msgs
+  nav_msgs
 )
 
 catkin_package(
- 	CATKIN_DEPENDS roscpp rospy message_runtime std_msgs geometry_msgs
+ 	CATKIN_DEPENDS roscpp rospy message_runtime std_msgs geometry_msgs nav_msgs
  )
 
 include_directories(
