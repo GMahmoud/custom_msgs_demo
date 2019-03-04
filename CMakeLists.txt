@@ -36,6 +36,12 @@ add_message_files(
   Map64.msg
 )
 
+add_message_files(
+  DIRECTORY msg/image
+  FILES 
+  Image64.msg
+)
+
 generate_messages(
   DEPENDENCIES
   std_msgs
