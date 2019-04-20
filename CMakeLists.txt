@@ -42,6 +42,12 @@ add_message_files(
   Image64.msg
 )
 
+add_message_files(
+  DIRECTORY msg/control
+  FILES 
+  HeadCmd.msg
+)
+
 generate_messages(
   DEPENDENCIES
   std_msgs
