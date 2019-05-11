@@ -46,6 +46,7 @@ add_message_files(
   DIRECTORY msg/control
   FILES 
   HeadCmd.msg
+  HeadPose.msg
   PhoneCmdVel.msg
 )
 
