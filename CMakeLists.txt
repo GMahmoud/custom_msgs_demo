@@ -19,9 +19,6 @@ add_message_files(
   FaceInfo.msg
   DetectedFaces.msg
   NormalizedFaces.msg
-  # state_manager/MachineDescription.msg
-  # state_manager/State.msg
-  # state_manager/Transition.msg
 )
 
 add_message_files(
@@ -48,6 +45,21 @@ add_message_files(
   HeadCmd.msg
   HeadPose.msg
   PhoneCmdVel.msg
+)
+
+add_message_files(
+  DIRECTORY msg/alpha1s
+  FILES 
+  BatteryState.msg
+)
+
+
+add_message_files(
+  DIRECTORY msg/state_manager
+  FILES 
+  State.msg
+  Transition.msg
+  MachineDescription.msg
 )
 
 generate_messages(
