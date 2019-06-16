@@ -11,14 +11,33 @@ find_package(catkin REQUIRED COMPONENTS
 )
 
 add_message_files(
+  DIRECTORY msg/state_machine
+  FILES 
+  # MachineDescription.msg
+  # State.msg
+  # Transition.msg
+)
+
+add_message_files(
+  DIRECTORY msg/detection
+  FILES 
+  FaceInfo.msg
+  DetectedFaces.msg
+  NormalizedFaces.msg
+)
+
+add_message_files(
+  DIRECTORY msg/display
+  FILES 
+  TextCmd.msg
+)
+
+add_message_files(
+  DIRECTORY msg/virtual_layer
   FILES 
   Form.msg
   Obstacles.msg
   Zone.msg
-  TextCmd.msg
-  FaceInfo.msg
-  DetectedFaces.msg
-  NormalizedFaces.msg
 )
 
 add_message_files(
@@ -51,15 +70,6 @@ add_message_files(
   DIRECTORY msg/alpha1s
   FILES 
   BatteryState.msg
-)
-
-
-add_message_files(
-  DIRECTORY msg/state_manager
-  FILES 
-  State.msg
-  Transition.msg
-  MachineDescription.msg
 )
 
 generate_messages(
