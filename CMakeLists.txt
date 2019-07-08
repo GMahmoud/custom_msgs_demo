@@ -1,88 +1,77 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(custom_msgs)
 
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  rospy
-  std_msgs
-  message_generation
-  geometry_msgs
-  nav_msgs
-)
+find_package(catkin REQUIRED
+             COMPONENTS roscpp
+                        rospy
+                        std_msgs
+                        message_generation
+                        geometry_msgs
+                        nav_msgs)
 
-add_message_files(
-  DIRECTORY msg/state_machine
-  FILES 
-  # MachineDescription.msg
-  # State.msg
-  # Transition.msg
-)
+add_message_files(DIRECTORY msg/state_machine FILES
+                  # MachineDescription.msg
+                  # State.msg
+                  # Transition.msg
+                  )
 
-add_message_files(
-  DIRECTORY msg/detection
-  FILES 
-  FaceInfo.msg
-  DetectedFaces.msg
-  NormalizedFaces.msg
-)
+add_message_files(DIRECTORY
+                  msg/detection
+                  FILES
+                  FaceInfo.msg
+                  DetectedFaces.msg
+                  NormalizedFaces.msg)
 
-add_message_files(
-  DIRECTORY msg/display
-  FILES 
-  TextCmd.msg
-)
+add_message_files(DIRECTORY
+                  msg/display
+                  FILES
+                  TextCmd.msg)
 
-add_message_files(
-  DIRECTORY msg/virtual_layer
-  FILES 
-  Form.msg
-  Obstacles.msg
-  Zone.msg
-)
+add_message_files(DIRECTORY
+                  msg/virtual_layer
+                  FILES
+                  Form.msg
+                  Obstacles.msg
+                  Zone.msg)
 
-add_message_files(
-  DIRECTORY msg/supervisor
-  FILES 
-  AppCmd.msg
-)
+add_message_files(DIRECTORY
+                  msg/supervisor
+                  FILES
+                  AppCmd.msg)
 
-add_message_files(
-  DIRECTORY msg/nav
-  FILES 
-  Map64.msg
-)
+add_message_files(DIRECTORY
+                  msg/nav
+                  FILES
+                  Map64.msg)
 
-add_message_files(
-  DIRECTORY msg/image
-  FILES 
-  Image64.msg
-)
+add_message_files(DIRECTORY
+                  msg/image
+                  FILES
+                  Image64.msg)
 
-add_message_files(
-  DIRECTORY msg/control
-  FILES 
-  HeadCmd.msg
-  HeadPose.msg
-  PhoneCmdVel.msg
-)
+add_message_files(DIRECTORY
+                  msg/control
+                  FILES
+                  HeadCmd.msg
+                  HeadPose.msg
+                  PhoneCmdVel.msg)
 
-add_message_files(
-  DIRECTORY msg/alpha1s
-  FILES 
-  BatteryState.msg
-)
+add_message_files(DIRECTORY
+                  msg/alpha1s
+                  FILES
+                  BatteryState.msg)
 
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-  geometry_msgs
-  nav_msgs
-)
+generate_messages(DEPENDENCIES
+                  std_msgs
+                  geometry_msgs
+                  nav_msgs)
 
-catkin_package(
- 	CATKIN_DEPENDS roscpp rospy message_runtime std_msgs geometry_msgs nav_msgs
- )
+catkin_package(CATKIN_DEPENDS
+               roscpp
+               rospy
+               message_runtime
+               std_msgs
+               geometry_msgs
+               nav_msgs)
 
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
+include_directories(${catkin_INCLUDE_DIRS})
