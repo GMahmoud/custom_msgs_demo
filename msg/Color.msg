@@ -1,3 +1,3 @@
-int32 r
-int32 g
-int32 b
+uint8 r
+uint8 g
+uint8 b
