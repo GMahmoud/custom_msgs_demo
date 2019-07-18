@@ -62,10 +62,15 @@ add_message_files(DIRECTORY
                   BatteryState.msg)
 
 add_message_files(DIRECTORY
+                  msg/hardware
+                  FILES
+                  ColorRGB.msg
+                  Leds.msg)
+
+add_message_files(DIRECTORY
                   msg
                   FILES
-                  Color.msg
-                  Leds.msg)
+                  LedRGBColors.msg)
 
 generate_messages(DEPENDENCIES
                   std_msgs
