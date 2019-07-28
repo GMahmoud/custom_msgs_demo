@@ -72,6 +72,15 @@ add_message_files(DIRECTORY
                   FILES
                   LedRGBColors.msg)
 
+add_message_files(DIRECTORY
+                  msg/create
+                  FILES
+                  Bumper.msg
+                  ChargingState.msg
+                  Mode.msg
+                  DefineSong.msg
+                  PlaySong.msg)
+
 generate_messages(DEPENDENCIES
                   std_msgs
                   geometry_msgs
