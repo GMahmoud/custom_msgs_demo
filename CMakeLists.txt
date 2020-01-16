@@ -81,6 +81,11 @@ add_message_files(DIRECTORY
                   DefineSong.msg
                   PlaySong.msg)
 
+add_message_files(DIRECTORY
+                  msg/rtc
+                  FILES
+                  MessageRTC.msg)
+
 generate_messages(DEPENDENCIES
                   std_msgs
                   geometry_msgs
