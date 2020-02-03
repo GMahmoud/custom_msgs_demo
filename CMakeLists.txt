@@ -39,7 +39,8 @@ add_message_files(DIRECTORY
                   FILES
                   AppCmd.msg
                   Dependency.msg
-                  Service.msg)
+                  Service.msg
+                  Process.msg)
 
 add_message_files(DIRECTORY
                   msg/nav
