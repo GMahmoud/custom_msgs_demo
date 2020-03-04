@@ -71,11 +71,6 @@ add_message_files(DIRECTORY
                   Leds.msg)
 
 add_message_files(DIRECTORY
-                  msg
-                  FILES
-                  LedRGBColors.msg)
-
-add_message_files(DIRECTORY
                   msg/create
                   FILES
                   Bumper.msg
@@ -88,6 +83,13 @@ add_message_files(DIRECTORY
                   msg/rtc
                   FILES
                   MessageRTC.msg)
+
+# For Arduino
+add_message_files(DIRECTORY
+                  msg
+                  FILES
+                  LedRGBColors.msg
+                  Battery.msg)
 
 generate_messages(DEPENDENCIES
                   std_msgs
