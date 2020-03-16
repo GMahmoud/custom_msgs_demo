@@ -84,6 +84,10 @@ add_message_files(DIRECTORY
                   FILES
                   MessageRTC.msg)
 
+add_message_files(DIRECTORY
+                  msg/console
+                  FILES
+                  Log.msg)
 # For Arduino
 add_message_files(DIRECTORY
                   msg
