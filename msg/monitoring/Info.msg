@@ -1,0 +1,7 @@
+string up_time
+int32 total_processes
+int32 running_processes
+float32 mem_usage
+float32 free_mem_gb
+float32 total_mem_gb
+float32 cpu_usage

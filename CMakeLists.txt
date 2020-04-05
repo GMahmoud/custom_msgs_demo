@@ -88,6 +88,11 @@ add_message_files(DIRECTORY
                   msg/console
                   FILES
                   Log.msg)
+
+add_message_files(DIRECTORY
+                  msg/monitoring
+                  FILES
+                  Info.msg)
 # For Arduino
 add_message_files(DIRECTORY
                   msg
