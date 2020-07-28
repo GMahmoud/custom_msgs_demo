@@ -1,2 +1,2 @@
 string name
-State[] substates
+string progress

@@ -9,11 +9,12 @@ find_package(catkin REQUIRED
                         geometry_msgs
                         nav_msgs)
 
-add_message_files(DIRECTORY msg/state_machine FILES
-                  # MachineDescription.msg
-                  # State.msg
-                  # Transition.msg
-                  )
+add_message_files(DIRECTORY
+                  msg/state_machine
+                  FILES
+                  State.msg
+                  Transition.msg
+                  MachineDescription.msg)
 
 add_message_files(DIRECTORY
                   msg/detection
