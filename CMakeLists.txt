@@ -94,6 +94,11 @@ add_message_files(DIRECTORY
                   msg/monitoring
                   FILES
                   Info.msg)
+
+add_message_files(DIRECTORY
+                  msg/ssh
+                  FILES
+                  Heartbeat.msg)
 # For Arduino
 add_message_files(DIRECTORY
                   msg
