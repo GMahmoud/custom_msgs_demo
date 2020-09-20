@@ -9,3 +9,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - [x] Add changelog and setup 0.1.0 version
+- [x] Add readme file
