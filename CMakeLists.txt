@@ -2,7 +2,7 @@
 # Version setup
 # ##############################################################################
 
-file(STRINGS ${CMAKE_SOURCE_DIR}/VERSION PROJECT_VERSION)
+file(STRINGS ${CMAKE_CURRENT_SOURCE_DIR}/VERSION PROJECT_VERSION)
 message(STATUS "Project version: ${PROJECT_VERSION}")
 
 # ##############################################################################
